@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 12.1-Carousel Page</title>
+    <!-- Bootstrap Core CSS -->
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/carousel/"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header, navbar -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">QP Auto</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link active fw-semibold"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#features" class="nav-link">Features</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search QPAuto.com"
+                aria-label="Search"
+              />
+              <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Carousel -->
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            class=""
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            class=""
+          ></button>
+        </div>
+        <!-- Carousel Item-->
+        <div class="carousel-inner">
+          <div class="carousel-item active bg-img1">
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>BMW X6</h1>
+                <p>
+                  The BMW X6 features a unique appearance that comes with a
+                  strong sporting sovereignty thanks to its engine block,
+                  suspension and equipment such as the xOffroad package.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#">View all specs</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-img2">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Mercedes-Maybach</h1>
+                <p>
+                  Elegance and elegance are reflected in the DNA of the
+                  Mercedes-Maybach S-Class.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#"
+                    >Make a test drive</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-img3">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Lamborghini Aventador</h1>
+                <p>
+                  V12 internal combustion engine supercar, final production
+                  version with a limited number of 600 units.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Next & Prev Button -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- SERVICES -->
+      <section id="services" class="p-5">
+        <div class="container">
+          <div
+            class="row justify-content-center align-items-start text-center g-4"
+          >
+            <div class="col-lg-4">
+              <img
+                src="images/test-drive.jpg"
+                alt="Schedule a test drive"
+                class="img-fluid rounded-circle img-service"
+              />
+              <p class="mt-3">
+                <a class="btn btn-outline-primary" href="#"
+                  ><i class="bi bi-car-front-fill"></i> Schedule a test drive
+                </a>
+              </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img
+                src="images/services.jpg"
+                alt="Service request"
+                class="rounded-circle img-service"
+              />
+              <p class="mt-3">
+                <a class="btn btn-outline-secondary" href="#"
+                  ><i class="bi bi-gear"></i> Service request</a
+                >
+              </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img
+                src="images/showroom.jpg"
+                alt="Find showrooms"
+                class="rounded-circle img-service"
+              />
+              <p class="mt-3">
+                <a class="btn btn-outline-secondary" href="#"
+                  ><i class="bi bi-search"></i> Find showrooms</a
+                >
+              </p>
+            </div>
+            <!-- /.col-lg-4 -->
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section id="features" class="pt-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-7">
+              <h2>BMW Intelligent Voice Command</h2>
+              <p class="lead">
+                Communicate with the vehicle using the BMW Intelligent Voice
+                Command feature
+              </p>
+              <p>
+                Speak commands spontaneously to operate many vehicle functions.
+                The system can also explain vehicle topics and help you better
+                understand your BMW.
+              </p>
+              <a href="#" class="btn btn-light mt-3">
+                <i class="bi bi-chevron-right"></i> Read More
+              </a>
+            </div>
+            <div class="col-md-5">
+              <img src="images/bmw-ivc.jpg" alt="" class="img-fluid" />
+            </div>
+          </div>
+
+          <hr class="feature-divider" />
+
+          <div class="row g-4">
+            <div class="col-md-7 order-md-2">
+              <h2>Mercedes-Maybach S-Class</h2>
+              <p class="lead">
+                The final version Mercedes-Maybach S 650 is equipped with a
+                turbocharged V12 engine, 6.0L capacity
+              </p>
+              <p>
+                According to the manufacturer's data, under standard conditions,
+                the Mercedes-Maybach S 650 can accelerate from 0-100km / h in
+                just 4.6 seconds.
+              </p>
+              <a href="#" class="btn btn-light mt-3">
+                <i class="bi bi-chevron-right"></i> Read More
+              </a>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img src="images/maybach-msc.jpg" alt="" class="img-fluid" />
+            </div>
+          </div>
+
+          <hr class="feature-divider" />
+
+          <div class="row g-4">
+            <div class="col-md-7">
+              <h2>Lamborghini Aventador LP780</h2>
+              <p class="lead">
+                The Ultimate version uses a 4-wheel steering system
+              </p>
+              <p>
+                Lamborghini Dynamic Steering (LDS) is mounted on the front axle
+                and fine-tuned for more responsiveness and realism, and adjusted
+                to integrate with active rear-wheel steering on the rear axle.
+              </p>
+              <a href="#" class="btn btn-light mt-3">
+                <i class="bi bi-chevron-right"></i> Read More
+              </a>
+            </div>
+            <div class="col-md-5">
+              <img src="images/lambo-inside.jpg" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <hr class="feature-divider" />
+        </div>
+      </section>
+      <!-- END THE FEATURES -->
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="container">
+          <p class="float-end">
+            <a href="#"><i class="bi bi-arrow-up-circle h4"></i></a>
+          </p>
+          <p>
+            &copy; 2022 QP Auto &middot; <a href="#">Privacy</a> &middot;
+            <a href="#">Terms</a>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Javascript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

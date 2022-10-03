@@ -1,0 +1,54 @@
+body::before {
+  content: "";
+  display: block;
+  height: 30px;
+}
+
+body {
+  padding-bottom: 30px;
+}
+
+.bg-img1 {
+  background-color: #000;
+  background-size: cover;
+  background-image: url("images/slide1.jpg");
+  background-position: top;
+}
+
+.bg-img2 {
+  background-color: #000;
+  background-size: cover;
+  background-image: url("images/slide2.jpg");
+  background-position: top;
+}
+
+.bg-img3 {
+  background-color: #000;
+  background-size: cover;
+  background-image: url("images/slide3.jpg");
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+.carousel {
+  margin-bottom: 30px;
+}
+
+.carousel-caption {
+  bottom: 45px;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 510px;
+}
+
+/* Services */
+.img-service {
+  width: 140px;
+  height: 140px;
+}
+
+.feature-divider {
+  margin: 45px 0; /* Space out the Bootstrap <hr> more */
+}
